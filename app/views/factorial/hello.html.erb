@@ -1,0 +1,15 @@
+<h1>Factorial</h1>
+<%= form_for(:input, url: factorial_path) do |form| %>
+  
+    <div class="field">
+      <%= form.label :number %>
+      <%= form.text_field :number%>
+    </div>
+  
+    <div class="actions">
+      <%= form.submit "Calculate factorial" %>
+    </div>
+<% end %>
+
+<p><%=@u%></p>
+  

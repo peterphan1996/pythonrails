@@ -6,7 +6,7 @@ class FactorialController < ApplicationController
     def calculate
         threads = []
 
-        500.times do |i|
+        10000.times do |i|
             threads << Thread.new do     
             @u = `python3.6 /home/ubuntu/pythonrails/app/controllers/factorial.py #{params[:input][:number]}`
             puts i
